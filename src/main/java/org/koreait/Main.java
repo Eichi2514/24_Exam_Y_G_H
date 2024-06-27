@@ -4,19 +4,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int a = in.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
 
-        int b = a;
-        for (int i = 0; i <= a; i++) {
-            for (int x = 0; x < i; x++) {
-                System.out.printf(" ");
-            }
-            for (int x1 = b; x1 > 0; x1--) {
-                System.out.printf("%s ", x1);
-            }
-            b--;
-            System.out.println(" ");
+        int b = 0;
+        int c = 1;
+        for (int i = 0; i < a; i++) {
+            if (i == 0 || (i%2 == 0)) {System.out.println(b);
+            b = b+c;}
+            else {System.out.println(c);
+            c = c+b;}
         }
     }
 }
