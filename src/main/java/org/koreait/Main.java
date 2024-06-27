@@ -10,9 +10,9 @@ public class Main {
         int b = 0;
         int c = 1;
         for (int i = 0; i < a; i++) {
-            if (i == 0 || (i%2 == 0)) {System.out.println(b);
+            if (i == 0 || (i%2 == 0)) {System.out.printf("%s ",b);
             b = b+c;}
-            else {System.out.println(c);
+            else {System.out.printf("%s ",c);
             c = c+b;}
         }
     }
